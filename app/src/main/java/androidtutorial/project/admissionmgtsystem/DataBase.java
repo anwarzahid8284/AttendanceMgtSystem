@@ -97,7 +97,7 @@ public class DataBase extends SQLiteOpenHelper {
     public boolean selectQuery() {
         SQLiteDatabase db = this.getWritableDatabase();
         try{
-            String checkStudent = "Select * from "+StudentAC_TB + " where "+studentRollNo+"=" + studentData.getStdRollNo();
+            String checkStudent = "Select * from "+StudentAC_TB + " where "+studentRollNo+"=" + studentData.getStdRollNo();//here i getRollNo which return null value
             Cursor cursor = db.rawQuery(checkStudent, null);
             if (cursor.getCount() <= 0) {
                 cursor.close();
