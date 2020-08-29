@@ -111,6 +111,7 @@ public class StudentRegistered extends AppCompatActivity implements View.OnClick
             editTextCDate.setFocusable(false);
             editTextCDate.setError("CDate is required");
         } else {
+                // Here I set Value
                 studentData.setStdName(stdName);
                 studentData.setStdRollNo(stdRollNo);
                 studentData.setStdClass(stdClass);
