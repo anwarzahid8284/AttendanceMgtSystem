@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".StudentRegistered">
+    <LinearLayout
+        android:id="@+id/firstLinearLayout"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewName"
+            android:text="@string/nameTextView"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:textColor="@color/whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nameId"
+            android:layout_width="345dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_bk"
+            android:layout_height="40dp"
+            android:hint="@string/nameHint"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textViewRollNo"
+            android:text="@string/rollNoTextView"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:textColor="@color/whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/rollNoId"
+            android:layout_width="345dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_bk"
+            android:layout_height="40dp"
+            android:hint="@string/rollNoHint"
+            android:inputType="number" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewClass"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:text="@string/classTextView"
+                android:textColor="@color/whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/classSpinner"
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:prompt="@string/ChooseClass"
+                android:entries="@array/ClassSpinner"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:layout_height="39dp"
+                android:background="@drawable/spinner_bk"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewClassSection"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:text="@string/classSectionTextView"
+            android:textColor="@color/whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/classSectionId"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_bk"
+            android:hint="@string/classSectionHint"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/textViewCDate"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:text="@string/cDateTextView"
+            android:textColor="@color/whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/cDateId"
+            android:inputType="date"
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            android:background="@drawable/edittext_bk"
+            android:hint="@string/cDateHint"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:text="@string/passwordTextView"
+            android:textColor="@color/whiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/passwordId"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_bk"
+            android:hint="@string/passwordHint"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/registeredBtnId"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/btn_bk"
+            android:text="@string/registeredBtnTextView" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/firstLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/alreadyLoginTextView"
+            android:textSize="15sp"
+            android:textColor="@color/whiteColor"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:text="@string/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/clickHereId"
+            android:textSize="15sp"
+            android:textColor="@color/blue"
+            android:text="@string/clickTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

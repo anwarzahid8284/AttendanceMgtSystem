@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AdmissionMgtSystem</string>
+    <string name="sudent_button">Student Panel</string>
+    <string name="admin_button">Admin Panel</string>
+    <string name="project_Name">Attendance Management System</string>
+    <string name="rollNoTextView">Roll No</string>
+    <string name="passwordTextView">Password</string>
+    <string name="rollNoHint">Roll No</string>
+    <string name="passwordHint">Password</string>
+    <string name="registeredTxt">If you have no account ?</string>
+    <string name="clickTextView">  Click here</string>
+    <string name="loginBtnTextView">Login</string>
+    <string name="nameTextView">Name</string>
+    <string name="nameHint">Name</string>
+    <string name="classTextView">Class</string>
+    <string name="classSectionTextView">Class Section</string>
+    <string name="cDateHint">Account Created Date</string>
+    <string name="cDateTextView">Created Date</string>
+    <string name="classSectionHint">For Example A,B,C</string>
+    <string name="loginTextView">if you have already account ?</string>
+    <string name="registeredBtnTextView">Submit</string>
+    <string name="ChooseClass">Choose Class</string>
+    <string-array name="ClassSpinner">Choose Class
+        <item>1th</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+    </string-array>
+</resources>

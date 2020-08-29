@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".WelcomeScreen">
+    <TextView
+        android:id="@+id/Project_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFF"
+        android:text="@string/project_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/school_icon"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/school_image"
+        android:layout_width="500px"
+        android:layout_height="500px" />
+
+    <LinearLayout
+        android:id="@+id/button_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/studentBtnId"
+            android:layout_width="163dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bk"
+            android:text="@string/sudent_button"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/adminBtnId"
+            android:layout_width="163dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bk"
+            android:text="@string/admin_button"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>
